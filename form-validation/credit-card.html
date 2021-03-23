@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Credit Card validation</title>
+
+	<style>
+		body {
+			height: 100vh;
+			display: grid;
+			place-content: center;
+			place-items: center;
+		}
+
+		.credit-card-form {
+			width: 30rem;
+			height: 20rem;
+			display: grid;
+			place-content: center;
+			place-items: center;
+			text-align: center;
+			font-size: 1.6rem;
+		}
+
+		input {
+			font: inherit;
+			text-align: inherit;
+			padding: .5rem;
+		}
+
+		p {
+			height: 2rem;
+		}
+
+		button {
+			padding: .5rem .8rem;
+			background-color: dodgerblue;
+			border: none;
+			font: inherit;
+			color: #fff;
+			border-radius: 2px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<form class="credit-card-form">
+		<label for="credit-card">Credit card number</label>
+		<input type="number" class="credit-card-input" />
+		<p id="validation-result"></p>
+		<button type="submit">Validate</button>
+	</form>
+</body>
+<script src="./credit-card.js"></script>
+
+</html>
