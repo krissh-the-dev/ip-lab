@@ -1,39 +1,47 @@
-const name = document.querySelector("input#name");
-const gender = document.querySelector("input#gender");
-const dob = document.querySelector("input#dob");
+const nameInput = document.querySelector("input#name");
+const genderInput = document.querySelector("input#gender");
+const dobInput = document.querySelector("input#dob");
 
-const email = document.querySelector("input#email");
-const password = document.querySelector("input#password");
-const cPassword = document.querySelector("input#c-password");
+const emailInput = document.querySelector("input#email");
+const passwordInput = document.querySelector("input#password");
+const cPasswordInput = document.querySelector("input#c-password");
 
 const errors = document.querySelector("p.errors");
 
 const submitButton = document.querySelector("button");
 
-submitButton.addEventListener("click", (ev) => {
-  ev.preventDefault();
+submitButton.addEventListener("click", function (ev) {
+  ev.preventDefault(); // prevent next page load
   let errorString = "";
-  if (name.value.length < 3 || name.value.length >= 30) {
+  if (nameInput.value.length < 3 || nameInput.value.length >= 30) {
     errorString += "Name is too short or lengthy.";
   }
-  if (new Date(dob.value) > new Date("2002-01-01")) {
+  if (new Date(dobInput.value) > new Date("2002-01-01")) {
     errorString += "\nYou're too young.";
   }
-  if (!email.value.match(/^[^\s@]+@[^\s@]+$/)) {
+  if (!emailInput.value.match(/^[^\s@]+@[^\s@]+$/)) {
+    //regex
     errorString += "\nInvalid email.";
   }
 
-  if (password.value !== cPassword.value) {
+  if (passwordInput.value !== cPasswordInput.value) {
     errorString += "\nPassword and confirm password mismatch.";
   }
 
-  if (
-    !password.value.match(
-      "^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$"
-    )
-  ) {
+  if (passwordInput.value.length < 6) {
     errorString += "\nWeak password";
+  }
+
+  if (errorString === "") {
+    errorString = "Validation successful.";
+    alert("Successfully registered.");
   }
 
   errors.innerHTML = errorString;
 });
+
+//!password.value.match(
+// /^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*].*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$/
+// )
+
+// /^ $/

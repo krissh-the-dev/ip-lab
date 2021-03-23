@@ -10,6 +10,7 @@ let card;
 button.addEventListener("click", (e) => {
   e.preventDefault();
   const { value } = cardInput;
+  // const value = cardInput.value;
 
   if (value.match(MASTER_CARD)) {
     card = "Mastercard";
@@ -23,4 +24,10 @@ button.addEventListener("click", (e) => {
 
   result.innerHTML = card;
   result.style.color = card === "Invalid Card number" ? "red" : "green";
+
+  // if (card === "Invalid Card number") {
+  //   result.style.color = "red";
+  // } else {
+  //   result.style.color = "green";
+  // }
 });
