@@ -1,0 +1,11 @@
+body {
+  display: grid;
+  height: 100vh;
+  max-width: 50rem;
+  margin: auto;
+
+  place-content: center;
+  justify-items: center;
+  text-align: center;
+  line-height: 2em;
+}
