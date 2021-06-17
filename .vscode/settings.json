@@ -1,0 +1,6 @@
+{
+	"java.project.referencedLibraries": [
+		"lib/**/*.jar",
+		"exp4ii-servlet-session/WEB-INF/lib/servlet-api.jar"
+	]
+}
