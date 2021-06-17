@@ -1,0 +1,23 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>GetName</servlet-name>
+		<servlet-class>GetName</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetName</servlet-name>
+		<servlet-class>GetName</servlet-class>
+		<url-pattern>/getname</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Hello</servlet-name>
+		<servlet-class>Hello</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Hello</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+</web-app>
