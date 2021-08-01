@@ -1,0 +1,13 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>Feedbacks</servlet-name>
+		<servlet-class>Feedbacks</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Get Feedbacks</servlet-name>
+		<servlet-class>FeedbackRouteHandler</servlet-class>
+		<url-pattern>/feedbacks</url-pattern>
+	</servlet-mapping>
+</web-app>
