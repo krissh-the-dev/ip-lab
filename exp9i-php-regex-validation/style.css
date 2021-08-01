@@ -1,0 +1,28 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.error {
+  color: red;
+}
+
+label,
+input {
+  display: block;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+}
+
+label[for="agreement"] {
+	display: inline-block;
+}
