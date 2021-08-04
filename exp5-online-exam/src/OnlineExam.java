@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class OnlineExam extends HttpServlet {
 	String seatNo, name;
-	String[] answers = new String[4];
+	String[] answers = new String[5];
 	int score = 0;
 
 	Connection connection;
@@ -32,17 +32,16 @@ public class OnlineExam extends HttpServlet {
 		seatNo = request.getParameter("seat");
 		name = request.getParameter("name");
 
-		for (int i = 0; i < 4; i++) {
-			answers[i] = request.getParameter("answer" + i);
-
-			score += answers[i] == "True" ? 25 : 0;
+		for (int i = 0; i < 5; i++) {
+			answers[i] = request.getParameter("answer" + (i + 1));
+			score += (answers[i].equals("True") ? 20 : 0);
 		}
 
 		response.setContentType("text/html");
 
 		try {
 			Statement statement = connection.createStatement();
-			statement.executeQuery(
+			statement.executeUpdate(
 					"INSERT into Exam (SeatNo, Name, Score) VALUES ( " + seatNo + ", '" + name + "', " + score + " );");
 			statement.close();
 
@@ -81,6 +80,12 @@ public class OnlineExam extends HttpServlet {
 			connection.close();
 		} catch (Exception ex) {
 			ex.printStackTrace();
+		} finally {
+			try {
+				connection.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }
