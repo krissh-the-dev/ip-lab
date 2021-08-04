@@ -1,0 +1,11 @@
+<web-app>
+	<servlet>
+		<servlet-name>OnlineExam</servlet-name>
+		<servlet-class>OnlineExam</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OnlineExam</servlet-name>
+		<servlet-class>OnlineExam</servlet-class>
+		<url-pattern>/exam</url-pattern>
+	</servlet-mapping>
+</web-app>
