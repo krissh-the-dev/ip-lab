@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1em;
+}
+
+main {
+  max-width: 900px;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.container {
+  margin-bottom: 3rem;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+}
+
+#displayDIV > p {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}

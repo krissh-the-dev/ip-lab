@@ -5,18 +5,22 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<title>Searching for Elements</title>
 	<script src="script.js"></script>
 </head>
 
 <body>
-	<H1>Searching for Elements</H1>
-	<h2>User Information Retrieval from XML File</h2>
-	<h3>Enter the User ID to retrieve the User Name and User Phone Number</h3>
-	<input type="text" id="myText" value="">
-	<input type="BUTTON" value="Get the User Information" onClick="readXMLData()">
-	<P>
-	<DIV ID="displayDIV"> </DIV>
+	<main>
+		<div class="container">
+			<h1>Searching for Elements</h1>
+			<h2>User Information Retrieval from XML File</h2>
+			<h3>Enter the User ID to retrieve the User Name and User Phone Number</h3>
+			<input type="text" id="myText" value="">
+			<input type="button" value="Get the User Information" onClick="readXMLData()">
+		</div>
+		<div id="displayDIV"> </div>
+	</main>
 </body>
 
 </html>

@@ -1,12 +1,22 @@
-html,
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 1.6rem;
+}
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 main {
-  max-width: 1000px;
-  margin: 40px auto;
+  max-width: 900px;
+  margin: 6rem auto;
 }
 
 .error {
@@ -24,5 +34,5 @@ input[type="checkbox"] {
 }
 
 label[for="agreement"] {
-	display: inline-block;
+  display: inline-block;
 }

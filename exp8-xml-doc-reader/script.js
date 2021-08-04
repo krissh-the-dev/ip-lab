@@ -10,9 +10,9 @@ function readXMLData() {
     output = id[i].firstChild.nodeValue;
     if (output == document.getElementById("myText").value) {
       document.getElementById("displayDIV").innerHTML = `
-					ID: ${id[i].firstChild.nodeValue} <br />
-					Name: ${name[i].firstChild.nodeValue} <br />
-					Phone: ${phone[i].firstChild.nodeValue}`;
+					<p>ID: ${id[i].firstChild.nodeValue}</p>
+					<p>Name: ${name[i].firstChild.nodeValue}</p>
+					<p>Phone: ${phone[i].firstChild.nodeValue}</p>`;
     }
   }
 }
