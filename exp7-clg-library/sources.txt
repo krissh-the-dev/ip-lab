@@ -1,5 +1,0 @@
-C:\Users\Krish\github\ip-lab\exp7\Catalogue.jsp
-C:\Users\Krish\github\ip-lab\exp7\controller.jsp
-C:\Users\Krish\github\ip-lab\exp7\footer.jsp
-C:\Users\Krish\github\ip-lab\exp7\index.jsp
-C:\Users\Krish\github\ip-lab\exp7\Student.jsp

@@ -1,0 +1,12 @@
+<web-app>
+	<servlet>
+		<servlet-name>First Servlet</servlet-name>
+		<servlet-class>HelloForm</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>First Servlet</servlet-name>
+		<servlet-class>HelloForm</servlet-class>
+		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>
+</web-app>
